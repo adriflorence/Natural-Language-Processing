@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HTMLWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/client/index.js',
@@ -8,8 +9,15 @@ module.exports = {
                 {
             test: '/\.js$/',
             exclude: /node_modules/,
-            loader: "babel-loader"
+            // When using with transpiling loaders, make sure they are in correct order
+            use: ['babel-loader', 'eslint-loader'],
                 }
         ]
-    }
+    },
+    plugins: [
+        new HTMLWebPackPlugin({
+            template: "./src/client/views/index.html",
+            filename: "./index.html",
+        })
+    ]
 }
