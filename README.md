@@ -27,3 +27,7 @@ This project provides practice with:
 - Creating layouts and page design
 - Service workers
 - Using APIs and creating requests to external urls
+
+### Resources
+
+Text and image are from https://www.nlpacademy.co.uk/what_is_nlp/
