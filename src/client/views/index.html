@@ -2,36 +2,55 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
+        <title>Natural Language Processing</title>
     </head>
 
     <body>
 
         <header>
-            <div class="">
+            <div class="logo">
                 Logo
             </div>
-            <div class="">
-                navigation
+            <div class="title">
+                Natural Language Processing
             </div>
         </header>
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                <img id="main_image" alt="Drawgin of a brain surrounded with the basics of natural language processing">
+            </section>
+            <section>
+                <p>This web tool allows users to run Natural Language Processing (NLP) on texts.
+                Using an exciting new api called <a href="https://aylien.com/">Aylien</a>, we can build a simple web interface to interact with their NLP system. This tool will give us back pertinent information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in tone.</p>
+            </section>
+            <section>
+                <form onsubmit="return Client.handleSubmit(event)">
+                    <input id="text" type="text" name="input" value="" placeholder="Please type some text here to analyze..">
+                    <input type="submit" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+                    <ul>
+                        <li>
+                          <p id="text_polarity"></p>
+                          <p id="text_polarity_confidence"></p>
+                        </li>
+              
+                        <li>
+                          <p id="text_subjectivity"></p>
+                          <p id="text_subjectivity_confidence"></p>
+                        </li>
+                      </ul>
+                </div>
             </section>
         </main>
 
-        <footer>
-            <p>This is a footer</p>
+        <footer class="footer">
+            <p>adriflorence</p>
         </footer>
 
     </body>
