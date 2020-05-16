@@ -28,6 +28,21 @@ This project provides practice with:
 - Service workers
 - Using APIs and creating requests to external urls
 
+### Project Requirements:
+
+The project must:
+
+- [x] Be set up with Webpack, Express, Node, and Sass, and Service Workers
+- [x] Have separate dev and prod configurations for Webpack
+- [x] Have the developer environment set up with the Webpack dev server
+- [x] Have a minimum of one form field
+- [x] Make one request to the Aylien API
+- [x] Use Sass for styling
+- [x] Minify js and styles in the production environment
+- [x] Response from the API must be added to the view for a user to see 
+- [x] Be able to show content offline
+
+
 ### Resources
 
 Text and image are from https://www.nlpacademy.co.uk/what_is_nlp/
