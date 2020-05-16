@@ -12,9 +12,13 @@ module.exports = {
     entry: './src/client/index.js',
     output: {
         // custom javaSctipt will be put into a library
-        // Client is arbitraty name
         libraryTarget: 'var',
-        library: 'Client'
+        library: 'Client' // arbitraty name
+    },
+    devServer: {
+        proxy: {
+            '/api': 'http://localhost:8000'
+        }
     },
     module: {
         rules: [
