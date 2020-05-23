@@ -9,11 +9,10 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
-    entry: './src/client/index.js',
     output: {
         // custom javaSctipt will be put into a library
         libraryTarget: 'var',
-        library: 'Client' // arbitraty name
+        library: 'Client' // arbitrary name
     },
     devServer: {
         proxy: {
