@@ -32,3 +32,34 @@ section {
         color: $red;
     }
 }
+
+// GRID-AREAS
+
+.header {
+    grid-area: header;
+}
+
+.container {
+    grid-area: container;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    height: 95vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 0 3px;
+    grid-template-areas:
+        "header"
+        "container"
+        "footer";
+}

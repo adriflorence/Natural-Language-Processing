@@ -7,7 +7,7 @@
 
     <body>
 
-        <header>
+        <header class="header">
             <div class="logo">
                 Logo
             </div>
@@ -16,9 +16,9 @@
             </div>
         </header>
 
-        <main>
+        <main class="container">
             <section>
-                <img id="main_image" alt="Drawing of a brain surrounded with the basics of natural language processing">
+                <img id="main_image" alt="Drawing of a brain surrounded with the basics of natural language processing" class="responsive">
             </section>
             <section>
                 <p>This web tool allows users to run Natural Language Processing (NLP) on texts.
@@ -27,7 +27,7 @@
             <section>
                 <form id="form" onsubmit="return Client.handleSubmit(event)" method="POST">
                     <input id="text" type="text" name="input" value="" placeholder="Please type some text here to analyze..">
-                    <input type="submit" value="submit">
+                    <input type="submit" value="submit" class="button">
                 </form>
             <section>
 
