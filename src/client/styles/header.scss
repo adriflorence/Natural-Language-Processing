@@ -1,5 +1,14 @@
-header {
+.header {
     display: flex;
+    grid-area: header;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 1em;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.title {
+    text-align: end;
 }
